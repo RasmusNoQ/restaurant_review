@@ -19,7 +19,7 @@ export default class ReviewsDAO{
         try{
             const reviewDoc = {
                 name:user.name,
-                user_id:user.user_id,
+                user_id:user._id,
                 date:date,
                 text:review,
                 restaurant_id:ObjectId(restaurantId),
